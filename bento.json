@@ -11,6 +11,18 @@
        "ume",
        "edamame"
        ]
+    },
+    {
+     "type":"crab",
+     "price": 9.99,
+     "ingredients":[
+       "rice",
+       "ume",
+       "crab",
+       "furikake",
+       "ume",
+       "edamame"
+       ]
     }
   ]
 }
