@@ -1,12 +1,12 @@
 {
   "food":[
   {
-    "which":"first"
+    "which":"first",
     "price":3.99
 },
 
 {
-    "which":"two"
+    "which":"two",
     "price":9.99
 }
 
