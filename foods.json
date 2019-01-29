@@ -12,22 +12,22 @@
 
 {
     "which":"thr",
-    "price":9.99
+    "price":10.99
 },
 
 {
     "which":"for",
-    "price":9.99
+    "price":2.59
 },
 
 {
     "which":"fit",
-    "price":9.99
+    "price":6.35
 },
 
 {
     "which":"six",
-    "price":9.99
+    "price":12.50
 }
   ]
 }
