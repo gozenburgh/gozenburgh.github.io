@@ -1,14 +1,15 @@
 {
-  "1food";[
+  "food";[
   {
+    "which":"first"
     "price":3.99
 },
 
-
-  "2food";[
-  {
+{
+    "which":"two"
     "price":9.99
-},
+}
+
   
   /*"bento":[
     {
@@ -34,6 +35,6 @@
        "ume",
        "edamame"
        ]
-    }
-  ]*/
+    }*/
+  ]
 }
