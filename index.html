@@ -71,7 +71,7 @@ var foodpri = (foodpri6 * 13.95).toFixed(2);
 document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
 }
 
-/*var previous = null;
+var previous = null;
 var current = null;
 setInternal(function()){
   doucment.getJSON("foods.json",function(json){
@@ -81,18 +81,7 @@ setInternal(function()){
     }
     previous = current;
   });
-},2000);*/
-  
-  /*var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function(){
-  if (this.readyState == 4 && this.status == 200){
-    var mydata = JSON.parse(this.responseText);
-    window.alert(mydata.bento[1].ingredients[3]);
-    
-  }
-};
-xmlhttp.open("GET","bento.json",true);
-xmlhttp.send();*/
+},2000);
 </script>
 </body>
 </html>
