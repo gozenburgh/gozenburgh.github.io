@@ -26,7 +26,7 @@ xmlhttp.onreadystatechange = function(){
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();
 
-document.getElementById("cost1").innerHTML = mydata.foods[0].price;
+document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
 document.getElementById("cost2").innerHTML = mydata.foods[1].price;
 document.getElementById("cost3").innerHTML = mydata.foods[2].price;
 document.getElementById("cost4").innerHTML = mydata.foods[3].price;
