@@ -1,16 +1,35 @@
 {
   "food":[
   {
-    "which":"first",
+    "which":"fir",
     "price":3.99
 },
 
 {
-    "which":"two",
+    "which":"sec",
     "price":9.99
 }
 
-  
+{
+    "which":"thr",
+    "price":9.99
+}
+
+{
+    "which":"for",
+    "price":9.99
+}
+
+{
+    "which":"fit",
+    "price":9.99
+}
+
+{
+    "which":"six",
+    "price":9.99
+}
+
   /*"bento":[
     {
      "type":"salmon",
