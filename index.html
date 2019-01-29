@@ -1,8 +1,89 @@
 <html>
-<head></head>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="gi.css">
+</head>
 <body>
+<div id = "hed">head</div>
+<div id = "fir">fud<div id="fudes1">description <p id=Cost1></p><button onclick=pur1()>bie</button><p id="tot1"></p></div></div>
+<div id = "sec">fud<div id="fudes2">description <p id=Cost2></p><button onclick=pur2()>bie</button><p id="tot2"></p></div></div>
+<div id = "thi">fud<div id="fudes3">description <p id=Cost3></p><button onclick=pur3()>bie</button><p id="tot3"></p></div></div>
+<div id = "fou">fud<div id="fudes4">description <p id=Cost4></p><button onclick=pur4()>bie</button><p id="tot4"></p></div></div>
+<div id = "fit">fud<div id="fudes5">description <p id=Cost5></p><button onclick=pur5()>bie</button><p id="tot5"></p></div></div>
+<div id = "six">fud<div id="fudes6">description <p id=Cost6></p><button onclick=pur6()>bie</button><p id="tot6"></p></div></div>
 <script>
 var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function(){
+  if (this.readyState == 4 && this.status == 200){
+    var mydata = JSON.parse(this.responseText);
+  //  window.alert(mydata.bento[1].ingredients[3]);
+  }
+};
+xmlhttp.open("GET","foods.json",true);
+xmlhttp.send();
+
+document.getElementById("cost1")
+
+var food1 = 0;
+function pur1(){
+food1++
+var foodpri = (food1 * 3.99).toFixed(2);
+document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
+}
+
+var food2 = 0;
+function pur2(){
+food2++
+var foodpri = (food2 * 5.99).toFixed(2);
+document.getElementById("tot2").innerHTML = "amount " + food2 + " " + foodpri;
+}
+
+var food3 = 0;
+function pur3(){
+food3++
+var foodpri = (food3 * 8.95).toFixed(2);
+document.getElementById("tot3").innerHTML = "amount " + food3 + " " + foodpri;
+}
+
+var food4 = 0;
+function pur4(){
+food4++
+var foodpri = (food4 * 2.39).toFixed(2);
+document.getElementById("tot4").innerHTML = "amount " + food4 + " " + foodpri;
+}
+
+var food5 = 0;
+function pur5(){
+food5++
+var foodpri = (food5 * 7.89).toFixed(2);
+document.getElementById("tot5").innerHTML = "amount " + food5 + " " + foodpri;
+}
+
+var food6 = 0;
+var foodpri6 = 0;
+function pur6(){
+foodpri6++
+food6++
+var foodpri = (foodpri6 * 13.95).toFixed(2);
+document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
+}
+
+/*var previous = null;
+var current = null;
+setInternal(function()){
+  doucment.getJSON("foods.json",function(json){
+    current = JSON.stringify(json);
+    if (prvious && current && previous !== current){
+      location reload();
+    }
+    previous = current;
+  });
+},2000);*/
+  
+  /*var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
@@ -11,7 +92,7 @@ xmlhttp.onreadystatechange = function(){
   }
 };
 xmlhttp.open("GET","bento.json",true);
-xmlhttp.send();
+xmlhttp.send();*/
 </script>
 </body>
 </html>
