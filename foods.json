@@ -29,31 +29,5 @@
     "which":"six",
     "price":9.99
 }
-
-  /*"bento":[
-    {
-     "type":"salmon",
-     "price": 7.79,
-     "ingredients":[
-       "rice",
-       "ume",
-       "lemon",
-       "gobo",
-       "ume",
-       "edamame"
-       ]
-    },
-    {
-     "type":"crab",
-     "price": 9.99,
-     "ingredients":[
-       "rice",
-       "ume",
-       "crab",
-       "furikake",
-       "ume",
-       "edamame"
-       ]
-    }*/
   ]
 }
