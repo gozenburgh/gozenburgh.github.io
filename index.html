@@ -72,18 +72,20 @@ document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();
 
+  var food1 = 0;
+var food2 = 0;
+var food3 = 0;
+var food4 = 0;
+var food5 = 0;
+var food6 = 0;
+  
   function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
   
-var food1 = 0;
-var food2 = 0;
-var food3 = 0;
-var food4 = 0;
-var food5 = 0;
-var food6 = 0;
+
 
 
 
