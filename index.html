@@ -74,7 +74,7 @@ xmlhttp.send();
 
   function pur1() {
 food1++;
-var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
+var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
   
