@@ -28,9 +28,11 @@ document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
 document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price);
 document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
     
-  }
-  
-
+    function buyA(){
+food1++
+var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
+document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
+}
   
 function pur2(){
 food2++
@@ -65,12 +67,14 @@ var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
 document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
 }
 
+    
+}
+  
+
 
 };
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();
-  
-var mydata = JSON.parse(this.responseText);
 
 var food1 = 0;
 var food2 = 0;
@@ -79,11 +83,7 @@ var food4 = 0;
 var food5 = 0;
 var food6 = 0;
 
-  function buyA(){
-food1++
-var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
-document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
-}
+
 
 /*var previous = null;
 var current = null;
