@@ -10,7 +10,12 @@
 <body>
 <div id = "hed">head</div>
 <div id = "fir">fud<div id="fudes1">description <p id="cost1"></p><button onClick="pur1()">bie</button><p id="tot1"></p></div></div>
-
+<div id = "sec">fud<div id="fudes2">description <p id="cost2"></p><button onClick="pur2()">bie</button><p id="tot2"></p></div></div>
+<div id = "thi">fud<div id="fudes3">description <p id="cost3"></p><button onClick="pur3()">bie</button><p id="tot3"></p></div></div>
+<div id = "fou">fud<div id="fudes4">description <p id="cost4"></p><button onClick="pur4()">bie</button><p id="tot4"></p></div></div>
+<div id = "fit">fud<div id="fudes5">description <p id="cost5"></p><button onClick="pur5()">bie</button><p id="tot5"></p></div></div>
+<div id = "six">fud<div id="fudes6">description <p id="cost6"></p><button onClick="pur6()">bie</button><p id="tot6"></p></div></div>
+  
 <script>
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
@@ -18,22 +23,24 @@ xmlhttp.onreadystatechange = function(){
     var mydata = JSON.parse(this.responseText);
     
 document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
-/*document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
+document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
 document.getElementById("cost3").innerHTML = parseFloat(mydata.foods[2].price);
 document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
 document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price);
 document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
-*/    
-}
-  
-
-function pur1() {
+    
+    function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
+    
+}
   
-/*function pur2() {
+
+
+  
+function pur2() {
 food2++;
 var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
 document.getElementById("tot2").innerHTML = "amount " + food2 + " " + foodpri;
@@ -64,7 +71,7 @@ function pur6() {
 food6++;
 var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
 document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
-}*/
+}
 
 
 };
