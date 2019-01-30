@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id = "hed">head</div>
-<div id = "fir">fud<div id="fudes1">description <p id="cost1"></p><button onclick="pur1()">bie</button><p id="tot1"></p></div></div>
+<div id = "fir">fud<div id="fudes1">description <p id="cost1"></p><button id="buyf" onclick="pur1()">bie</button><p id="tot1"></p></div></div>
 <div id = "sec">fud<div id="fudes2">description <p id="cost2"></p><button onclick="pur2()">bie</button><p id="tot2"></p></div></div>
 <div id = "thi">fud<div id="fudes3">description <p id="cost3"></p><button onclick="pur3()">bie</button><p id="tot3"></p></div></div>
 <div id = "fou">fud<div id="fudes4">description <p id="cost4"></p><button onclick="pur4()">bie</button><p id="tot4"></p></div></div>
@@ -21,12 +21,12 @@ xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
     
-document.getElementById("cost1").innerHTML = mydata;foods[0].price;
+document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
     
 var food1 = 0;
 function pur1(){
 food1++
-var foodpri = (food1 * mydata.foods[0].price).toFixed(2);
+var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
 
