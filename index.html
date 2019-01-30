@@ -21,7 +21,7 @@ xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
     
-document.getElementById("cost1").innerHTML = mydata.foods[0].price);
+document.getElementById("cost1").innerHTML = mydata;foods[0].price;
     
 var food1 = 0;
 function pur1(){
