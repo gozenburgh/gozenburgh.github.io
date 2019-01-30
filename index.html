@@ -69,6 +69,8 @@ document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
 };
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();
+  
+var mydata = JSON.parse(this.responseText);
 
 var food1 = 0;
 var food2 = 0;
