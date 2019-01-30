@@ -30,11 +30,7 @@ document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
     
   }
   
-function buyA(){
-food1++
-var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
-document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
-}
+
   
 function pur2(){
 food2++
@@ -81,6 +77,11 @@ var food4 = 0;
 var food5 = 0;
 var food6 = 0;
 
+  function buyA(){
+food1++
+var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
+document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
+}
 
 /*var previous = null;
 var current = null;
