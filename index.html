@@ -28,6 +28,10 @@ document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
 document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price);
 document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
 
+
+    //window.alert(mydata.bento[1].ingredients[3]);
+  }
+  
 function pur1(){
 food1++
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
@@ -61,17 +65,12 @@ var foodpri = (food5 * parseFloat(mydata.foods[4].price)).toFixed(2);
 document.getElementById("tot5").innerHTML = "amount " + food5 + " " + foodpri;
 }
 
-
-
 function pur6(){
 food6++
 var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
 document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
 }
 
-    //window.alert(mydata.bento[1].ingredients[3]);
-  }
-  
 
 };
 xmlhttp.open("GET","foods.json",true);
