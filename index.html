@@ -20,7 +20,7 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
-  //  window.alert(mydata.bento[1].ingredients[3]);
+    window.alert(mydata.bento[1].ingredients[3]);
   }
 };
 xmlhttp.open("GET","foods.json",true);
