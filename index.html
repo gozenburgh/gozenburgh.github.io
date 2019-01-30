@@ -22,13 +22,52 @@ xmlhttp.onreadystatechange = function(){
     var mydata = JSON.parse(this.responseText);
     
 document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
+document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
+document.getElementById("cost3").innerHTML = parseFloat(mydata.foods[2].price);
+document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
+document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price);
+document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
 
 function pur1(){
 food1++
-var foodpri = (food1 * mydata.foods[0].price).toFixed(2);
+var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }  
   
+function pur2(){
+food2++
+var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
+document.getElementById("tot2").innerHTML = "amount " + food2 + " " + foodpri;
+}
+
+
+function pur3(){
+food3++
+var foodpri = (food3 * parseFloat(mydata.foods[2].price)).toFixed(2);
+document.getElementById("tot3").innerHTML = "amount " + food3 + " " + foodpri;
+}
+
+
+function pur4(){
+food4++
+var foodpri = (food4 * parseFloat(mydata.foods[3].price)).toFixed(2);
+document.getElementById("tot4").innerHTML = "amount " + food4 + " " + foodpri;
+}
+
+
+function pur5(){
+food5++
+var foodpri = (food5 * parseFloat(mydata.foods[4].price)).toFixed(2);
+document.getElementById("tot5").innerHTML = "amount " + food5 + " " + foodpri;
+}
+
+
+
+function pur6(){
+food6++
+var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
+document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
+}
 
     //window.alert(mydata.bento[1].ingredients[3]);
   }
@@ -40,45 +79,11 @@ xmlhttp.send();
 
 var food1 = 0;
 var food2 = 0;
-
-  
-
-
-function pur2(){
-food2++
-var foodpri = (food2 * mydata.foods[1].price).toFixed(2);
-document.getElementById("tot2").innerHTML = "amount " + food2 + " " + foodpri;
-}
-
 var food3 = 0;
-function pur3(){
-food3++
-var foodpri = (food3 * mydata.foods[2].price).toFixed(2);
-document.getElementById("tot3").innerHTML = "amount " + food3 + " " + foodpri;
-}
-
 var food4 = 0;
-function pur4(){
-food4++
-var foodpri = (food4 * mydata.foods[3].price).toFixed(2);
-document.getElementById("tot4").innerHTML = "amount " + food4 + " " + foodpri;
-}
-
 var food5 = 0;
-function pur5(){
-food5++
-var foodpri = (food5 * mydata.foods[4].price).toFixed(2);
-document.getElementById("tot5").innerHTML = "amount " + food5 + " " + foodpri;
-}
-
 var food6 = 0;
-var foodpri6 = 0;
-function pur6(){
-foodpri6++
-food6++
-var foodpri = (foodpri6 * mydata.foods[5].price).toFixed(2);
-document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
-}
+
 
 /*var previous = null;
 var current = null;
