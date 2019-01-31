@@ -11,6 +11,7 @@
   background-color:red;
   padding:10px;
   margin:2px;
+  overflow:scroll;
 }
 #fudes1{
   margin:8px;
