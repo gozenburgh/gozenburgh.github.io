@@ -18,13 +18,13 @@
   
 <script>
   
-//var mydata = [];
+var otdata = [];
   
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
-    window.mydata = mydata;
+    window.mydata = otdata;
 
 
     
@@ -81,11 +81,11 @@ var food4 = 0;
 var food5 = 0;
 var food6 = 0;
   
-document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
+document.getElementById("cost1").innerHTML = parseFloat(otdata.foods[0].price);
   
 function pur1() {
 food1++;
-var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
+var foodpri = (food1 * parseFloat(otdata.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
  
