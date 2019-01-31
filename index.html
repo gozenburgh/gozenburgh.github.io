@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="gi.css">
 </head>
 <body>
-<button onclick=purone()>bie</button>
+<button onclick="purone()">buy</button>
 <div id = "hed">head</div>
 <div id = "fir">fud<div id="fudes1">description <p id="cost1"></p><p id="tot1"></p></div></div>
 <div id = "sec">fud<div id="fudes2">description <p id="cost2"></p><button onClick="pur2()">bie</button><p id="tot2"></p></div></div>
@@ -35,7 +35,7 @@ document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
     
 }
   
-function pur1() {
+function purone() {
 food1++;
 var foodpri = (food1 * 3.99/*parseFloat(mydata.foods[0].price)*/).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
