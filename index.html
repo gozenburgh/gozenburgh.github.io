@@ -18,7 +18,7 @@
   
 <script>
   
-var mydata =;
+var mydata = [""];
   
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
@@ -28,17 +28,17 @@ xmlhttp.onreadystatechange = function(){
 
     
 
-document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
+/*document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
 document.getElementById("cost3").innerHTML = parseFloat(mydata.foods[2].price);
 document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
 document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price);
 document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
-    
+*/    
 }
   
 
  
-function pur2() {
+/*function pur2() {
 food2++;
 var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
 document.getElementById("tot2").innerHTML = "amount " + food2 + " " + foodpri;
@@ -66,20 +66,20 @@ function pur6() {
 food6++;
 var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
 document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri; 
-}
+}*/
 
 };
-    
+     
+xmlhttp.open("GET","foods.json",true);
+xmlhttp.send();  
+  
 document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
+  
 function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
-  
-xmlhttp.open("GET","foods.json",true);
-xmlhttp.send();  
-  
  
   
 var food1 = 0;
