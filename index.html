@@ -8,13 +8,12 @@
 <link rel="stylesheet" type="text/css" href="gi.css">
 </head>
 <body>
-<div id = "hed">head <p id="cost1"></p></div>
 <div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">bie</button><p id="tot1"></p></div>
-<div id = "sec">name<div id="fudes2">description <p id="cost2"></p><button onClick="pur2()">bie</button><p id="tot2"></p></div></div>
-<div id = "thi">name<div id="fudes3">description <p id="cost3"></p><button onClick="pur3()">bie</button><p id="tot3"></p></div></div>
-<div id = "fou">name<div id="fudes4">description <p id="cost4"></p><button onClick="pur4()">bie</button><p id="tot4"></p></div></div>
-<div id = "fit">name<div id="fudes5">description <p id="cost5"></p><button onClick="pur5()">bie</button><p id="tot5"></p></div></div>
-<div id = "six">name<div id="fudes6">description <p id="cost6"></p><button onClick="pur6()">bie</button><p id="tot6"></p></div></div>
+<div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">bie</button><p id="tot2"></p></div>
+<div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">bie</button><p id="tot3"></p></div>
+<div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">bie</button><p id="tot4"></p></div>
+<div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">bie</button><p id="tot5"></p></div>
+<div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">bie</button><p id="tot6"></p></div>
   
 <script>
   
@@ -26,12 +25,12 @@ xmlhttp.onreadystatechange = function(){
     var mydata = JSON.parse(this.responseText);
     window.mydata = mydata;
     
-document.getElementById("fudes1").innerHTML = "descrip " + parseFloat(mydata.foods[0].price) + " ";
-document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price) + " ";
-document.getElementById("cost3").innerHTML = parseFloat(mydata.foods[2].price) + " ";
-document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price) + " ";
-document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price) + " ";
-document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price) + " ";
+document.getElementById("fudes1").innerHTML = "description " + parseFloat(mydata.foods[0].price) + " ";
+document.getElementById("fudes2").innerHTML = "description " + parseFloat(mydata.foods[1].price) + " ";
+document.getElementById("fudes3").innerHTML = "description " + parseFloat(mydata.foods[2].price) + " ";
+document.getElementById("fudes4").innerHTML = "description " + parseFloat(mydata.foods[3].price) + " ";
+document.getElementById("fudes5").innerHTML = "description " + parseFloat(mydata.foods[4].price) + " ";
+document.getElementById("fudes6").innerHTML = "description " + parseFloat(mydata.foods[5].price) + " ";
     
 }
   
