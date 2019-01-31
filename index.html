@@ -18,9 +18,9 @@
   
 <script>
   
-var findd;
+var findd = new XMLHttpRequest();
 findd.open("GET","foods.json",true);
-mydata = JSON.parse(findd);
+var mydata = JSON.parse(findd);
   
 /*var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
