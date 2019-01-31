@@ -17,10 +17,13 @@
 <div id = "six">fud<div id="fudes6">description <p id="cost6"></p><button onClick="pur6()">bie</button><p id="tot6"></p></div></div>
   
 <script>
+  
+var maydata;
+  
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
-    var mydata = JSON.parse(this.responseText);
+    mydata = JSON.parse(this.responseText);
 
 
     
