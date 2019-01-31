@@ -18,7 +18,7 @@
   
 <script>
 var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function(){
+/*xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
     var mydata = JSON.parse(this.responseText);
     
@@ -66,14 +66,14 @@ var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
 document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri; 
 }
 
-};
+};*/
     
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();  
   
   function pur1() {
 food1++;
-var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
+var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
   
