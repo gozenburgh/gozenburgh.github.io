@@ -26,12 +26,13 @@ xmlhttp.onreadystatechange = function(){
     var mydata = JSON.parse(this.responseText);
     window.mydata = mydata;
     
-/*document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
+document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
+document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
 document.getElementById("cost3").innerHTML = parseFloat(mydata.foods[2].price);
 document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
 document.getElementById("cost5").innerHTML = parseFloat(mydata.foods[4].price);
 document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
-*/    
+    
 }
   
  
@@ -72,8 +73,6 @@ var food3 = 0;
 var food4 = 0;
 var food5 = 0;
 var food6 = 0;
-  
-document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
   
 function pur1() {
 food1++;
