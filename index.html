@@ -72,7 +72,7 @@ document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
   
 function pur1() {
 food1++;
-var foodpri = (food1 * 3.99/*parseFloat(mydata.foods[0].price)*/).toFixed(2);
+var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
 document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
 }
   
