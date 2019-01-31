@@ -27,7 +27,7 @@ xmlhttp.onreadystatechange = function(){
 
 
     
-document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
+
 document.getElementById("cost2").innerHTML = parseFloat(mydata.foods[1].price);
 document.getElementById("cost3").innerHTML = parseFloat(mydata.foods[2].price);
 document.getElementById("cost4").innerHTML = parseFloat(mydata.foods[3].price);
@@ -36,11 +36,7 @@ document.getElementById("cost6").innerHTML = parseFloat(mydata.foods[5].price);
     
 }
   
-function pur1() {
-food1++;
-var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
-document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
-}
+
  
 function pur2() {
 food2++;
@@ -74,6 +70,13 @@ document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri;
 
 };
     
+document.getElementById("cost1").innerHTML = parseFloat(mydata.foods[0].price);
+function pur1() {
+food1++;
+var foodpri = (food1 * parseFloat(xmlhttp.foods[0].price)).toFixed(2);
+document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
+}
+  
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();  
   
