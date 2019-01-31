@@ -18,12 +18,13 @@
   
 <script>
   
-var mydata = [];
+//var mydata = [];
   
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if (this.readyState == 4 && this.status == 200){
-    mydata = JSON.parse(this.responseText);
+    var mydata = JSON.parse(this.responseText);
+    window.mydata = mydata;
 
 
     
