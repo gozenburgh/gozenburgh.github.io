@@ -10,7 +10,7 @@
 <body>
 
 <div id = "top">head <a href="test1">oi</a> <button onClick="taker1()">boop</button></div>
-<div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">buy</button><p id="totCF"></p> <p id="totP1"></p></div>
+<div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">buy</button><p id="totCF">21</p> <p id="totP1"></p></div>
 <div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">buy</button><p id="totC2"></p><p id="totP2"></p></div>
 <div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">buy</button><p id="totC3"></p><p id="totP3"></p></div>
 <div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">buy</button><p id="totC4"></p><p id="totP4"></p></div>
@@ -43,7 +43,7 @@ xmlhttp.send();
   
 
   
-var food1 = 0;
+//var food1 = 0;
 var food2 = 0;
 var food3 = 0;
 var food4 = 0;
@@ -61,7 +61,7 @@ function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
 document.getElementById("totP1").innerHTML = foodpri;
-document.getElementById("totCF").innerHTML = food1;
+//document.getElementById("totCF").innerHTML = food1;
 }
 function pur2() {
 food2++;
