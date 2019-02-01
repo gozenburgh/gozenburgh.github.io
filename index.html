@@ -9,13 +9,14 @@
 </head>
 <body>
 
-<div id = "top">head  <button onClick="taker1()">boop</button></div>
+<div id = "top">head</div>
 <div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">buy</button><p id="totCF"></p> <p id="totP1"></p></div>
 <div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">buy</button><p id="totC2"></p><p id="totP2"></p></div>
 <div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">buy</button><p id="totC3"></p><p id="totP3"></p></div>
 <div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">buy</button><p id="totC4"></p><p id="totP4"></p></div>
 <div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">buy</button><p id="totC5"></p><p id="totP5"></p></div>
 <div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">buy</button><p id="totC6"></p><p id="totP6"></p></div>
+<div id = "bottom">lower <button onClick"tip"><p id="endP"></p></button></div>
   
 <script>
   
@@ -41,26 +42,19 @@ document.getElementById("fudes6").innerHTML = "description " + parseFloat(mydata
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();  
   
-
-  
 var food1 = 0;
 var food2 = 0;
 var food3 = 0;
 var food4 = 0;
 var food5 = 0;
 var food6 = 0;
+var endP = 0;
 
-
-function taker1() {
-  var x = document.getElementById('totCF').value;
-  localStorage.setItem("totCF",x);
-  location.href="ro.html";
-}
-  
 function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
 document.getElementById("totP1").innerHTML = foodpri;
+document.getElementById("endP").innerHTML = foodpri;
 document.getElementById("totCF").innerHTML = food1;
 }
 function pur2() {
