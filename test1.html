@@ -1,0 +1,14 @@
+<html>
+<body>
+<h3>enter name</h3>
+<input type="text" id="ramenName">
+<button onClick="taker1()">click</button>
+<script>
+function taker1() {
+  var x = document.getElementById('ramenName').value;
+  localStorage.setItem("ramenName",x);
+  location.href="ze.html";
+}
+</script>
+</body>
+</html>
