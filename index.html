@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="gi.css">
 </head>
 <body>
-<div id = "top">head <a href="go.html" onClick"nextpage()">END</a></div>
+<div id = "top">head <a href="go.html" onClick"storageTest()">END</a></div>
 <div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">buy</button><p id="totC1"></p> <p id="totP1"></p></div>
 <div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">buy</button><p id="totC2"></p><p id="totP2"></p></div>
 <div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">buy</button><p id="totC3"></p><p id="totP3"></p></div>
@@ -81,10 +81,10 @@ var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
 document.getElementById("totP6").innerHTML = "amount " + food6 + " " + foodpri; 
 }
   
-function nextpage() {
-var x = document.getElementById("totP1").value;
-localStorage.setItem("totP1",x);
-location.href="go.html";
+function storageTest() {
+  var x = document.getElementById('totP1').value;
+  localStorage.setItem("totP1",x);
+  location.href="go.html";
 }
   
 /*var previous = null;
