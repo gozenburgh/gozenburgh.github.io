@@ -1,6 +1,10 @@
 <html>
 <head>
-
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
 <link rel="stylesheet" type="text/css" href="gi.css">
 </head>
 <body>
@@ -46,8 +50,8 @@ var food4 = 0;
 var food5 = 0;
 var food6 = 0;
 
-function sends() {
-  var x = document.getElementById("totCO").value;
+function taker() {
+  var x = document.getElementById('totCO').value;
   localStorage.setItem("totCO",x);
   location.href="go.html";
 }
