@@ -53,7 +53,7 @@ var food6 = 0;
 
 function taker1() {
   var x = document.getElementById('totCF').value;
-  localStorage.setItem("totCF",x);
+  localStorage.setItem("totCF",JSON.stringify(x));
   location.href="ro.html";
 }
   
