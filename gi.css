@@ -79,5 +79,6 @@
 #bottom{
   width:98.7%;
   height:15%;
+  float:left;
   background-color:slategray;
   padding:5px;
