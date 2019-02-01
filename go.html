@@ -3,10 +3,12 @@
 
 </head>
 <body>
-<h1 id="results"></h1>
+<h2 id="results"></h2>
 <script>
- var fod1 = localStorage.getItem("totC1");
- document.getElementById("results").innerHTML = fod1;
+ var fod1 = localStorage.getItem('totC1');
+ var food = {};
+ food["one"] = fod1;
+ document.getElementById('results').innerHTML = food.fod1;
 </script> 
 </body>
 </html>
