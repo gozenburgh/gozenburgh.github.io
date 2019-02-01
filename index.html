@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="gi.css">
 </head>
 <body>
-<div id = "top">head <a href="go.html">END</a> <button onClick="sends()">boop</button></div>
+<div id = "top">head <button onClick="sends()">boop</button></div>
 <div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">buy</button><p id="totC1"></p> <p id="totP1"></p></div>
 <div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">buy</button><p id="totC2"></p><p id="totP2"></p></div>
 <div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">buy</button><p id="totC3"></p><p id="totP3"></p></div>
@@ -40,7 +40,7 @@ document.getElementById("fudes6").innerHTML = "description " + parseFloat(mydata
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();  
   
-var food1 = 24;
+var food1 = 0;
 var food2 = 0;
 var food3 = 0;
 var food4 = 0;
@@ -83,7 +83,7 @@ document.getElementById("totP6").innerHTML = "amount " + food6 + " " + foodpri;
   
 function sends() {
   var x = document.getElementById('totC1').value;
-  localStorage.setItem("totC1",x);
+  localStorage.setItem("tot1",x);
   location.href="go.html";
 }
   
