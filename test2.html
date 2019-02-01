@@ -1,0 +1,14 @@
+<html>
+<body>
+<h3>enter price</h3>
+<input type="text" id="ramenPrice">
+<button onClick="taker2()">click</button>
+<script>
+function taker2() {
+  var x = document.getElementById('ramenPrice').value;
+  localStorage.setItem("ramenPrice",x);
+  location.href="zo.html";
+}
+</script>
+</body>
+</html>
