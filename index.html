@@ -9,12 +9,12 @@
 </head>
 <body>
 <div id = "top">head <a href="go.html" onClick"nxtpage()">END</a></div>
-  <div id = "fir">name<div id="fudes1">description <p id="costO"></p></div><button onClick="pur1()">bie</button><p id="tot1"></p></div>
-<div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">bie</button><p id="tot2"></p></div>
-<div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">bie</button><p id="tot3"></p></div>
-<div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">bie</button><p id="tot4"></p></div>
-<div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">bie</button><p id="tot5"></p></div>
-<div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">bie</button><p id="tot6"></p></div>
+<div id = "fir">name<div id="fudes1">description </div><button onClick="pur1()">buy</button><p id="totC1"></p><p id="totP1"></p></div>
+<div id = "sec">name<div id="fudes2">description </div><button onClick="pur2()">buy</button><p id="totC2"></p><p id="totP2"></p></div>
+<div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">buy</button><p id="totC3"></p><p id="totP3"></p></div>
+<div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">buy</button><p id="totC4"></p><p id="totP4"></p></div>
+<div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">buy</button><p id="totC5"></p><p id="totP5"></p></div>
+<div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">buy</button><p id="totC6"></p><p id="totP6"></p></div>
   
 <script>
   
@@ -26,7 +26,7 @@ xmlhttp.onreadystatechange = function(){
     var mydata = JSON.parse(this.responseText);
     window.mydata = mydata;
     
-document.getElementById("costO").innerHTML = /*"description " + */parseFloat(mydata.foods[0].price) + " ";
+document.getElementById("fudes1").innerHTML = "description " + parseFloat(mydata.foods[0].price) + " ";
 document.getElementById("fudes2").innerHTML = "description " + parseFloat(mydata.foods[1].price) + " ";
 document.getElementById("fudes3").innerHTML = "description " + parseFloat(mydata.foods[2].price) + " ";
 document.getElementById("fudes4").innerHTML = "description " + parseFloat(mydata.foods[3].price) + " ";
@@ -46,41 +46,42 @@ var food3 = 0;
 var food4 = 0;
 var food5 = 0;
 var food6 = 0;
+document.getElementById("totC1").innerHTML = "amount " + food1;
   
 function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
-document.getElementById("tot1").innerHTML = "amount " + food1 + " " + foodpri;
+document.getElementById("totP1").innerHTML =  " " + foodpri;
 }
 function pur2() {
 food2++;
 var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
-document.getElementById("tot2").innerHTML = "amount " + food2 + " " + foodpri;
+document.getElementById("totP2").innerHTML = "amount " + food2 + " " + foodpri;
 }
 function pur3() {
 food3++;
 var foodpri = (food3 * parseFloat(mydata.foods[2].price)).toFixed(2);
-document.getElementById("tot3").innerHTML = "amount " + food3 + " " + foodpri;
+document.getElementById("totP3").innerHTML = "amount " + food3 + " " + foodpri;
 }
 function pur4() {
 food4++;
 var foodpri = (food4 * parseFloat(mydata.foods[3].price)).toFixed(2);
-document.getElementById("tot4").innerHTML = "amount " + food4 + " " + foodpri;
+document.getElementById("totP4").innerHTML = "amount " + food4 + " " + foodpri;
 }
 function pur5() {
 food5++;
 var foodpri = (food5 * parseFloat(mydata.foods[4].price)).toFixed(2);
-document.getElementById("tot5").innerHTML = "amount " + food5 + " " + foodpri;
+document.getElementById("totP5").innerHTML = "amount " + food5 + " " + foodpri;
 }
 function pur6() {
 food6++;
 var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
-document.getElementById("tot6").innerHTML = "amount " + food6 + " " + foodpri; 
+document.getElementById("totP6").innerHTML = "amount " + food6 + " " + foodpri; 
 }
   
 function nxtpage() {
-var x = food1.value
-localStorage.setItem("food1",x);
+var x = document.getElementById("totC1").value;
+localStorage.setItem("totC1",x);
 location.href="go.html";
 }
   
