@@ -19,6 +19,13 @@
   
 <script>
   
+
+function sends() {
+  var x = document.getElementById("totCO").value;
+  localStorage.setItem("totCO",x);
+  location.href="go.html";
+}
+  
 var mydata = [];
   
 var xmlhttp = new XMLHttpRequest();
@@ -49,11 +56,6 @@ var food5 = 0;
 var food6 = 0;
 
 
-function sends() {
-  var x = document.getElementById("totCO").value;
-  localStorage.setItem("totCO",x);
-  location.href="go.html";
-}
   
 function pur1() {
 food1++;
