@@ -19,13 +19,6 @@
   
 <script>
   
-
-function sends() {
-  var x = document.getElementById("totCO").value;
-  localStorage.setItem("totCO",x);
-  location.href="go.html";
-}
-  
 var mydata = [];
   
 var xmlhttp = new XMLHttpRequest();
@@ -47,6 +40,12 @@ document.getElementById("fudes6").innerHTML = "description " + parseFloat(mydata
      
 xmlhttp.open("GET","foods.json",true);
 xmlhttp.send();  
+  
+function sends() {
+  var x = document.getElementById("totCO").value;
+  localStorage.setItem("totCO",x);
+  location.href="go.html";
+}
   
 var food1 = 0;
 var food2 = 0;
