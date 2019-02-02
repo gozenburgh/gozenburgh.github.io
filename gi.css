@@ -37,7 +37,8 @@ body{
   margin:8px;
 }
 #pur1{
-
+border-width: 1px;
+border-radius: 12px;
 }
 
 #cle1{
