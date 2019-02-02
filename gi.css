@@ -19,6 +19,7 @@ body{
   width:48.21%;
   height:19%;
   float:left;
+  border-style: dotted solid dotted solid; 
   color:black;
   background-image: url("http://i.huffpost.com/gadgets/slideshows/342001/slide_342001_3533612_free.jpg");
   background-repeat: repeat-x;
@@ -37,11 +38,11 @@ body{
   margin:8px;
 }
 #pur1{
- border-style: dotted solid dotted solid; 
+
 }
 
 #cle1{
- border-style: dotted solid dotted solid; 
+
 }
 
 #sec{
