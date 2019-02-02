@@ -20,7 +20,9 @@ body{
   height:19%;
   float:left;
   color:white;
-  background-color:dimgray;
+  background-image: url("http://www.seasonswellness.com/wp-content/uploads/2014/06/Shiitake_mushroom.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   font-family:Tahoma, Geneva, sans-serif;
   padding:10px;
   margin:2px;
