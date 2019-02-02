@@ -86,18 +86,18 @@ document.getElementById("totP6").innerHTML = "$" + foodpri;
 document.getElementById("totT6").innerHTML = food6;
 }
 
-var tot = resu().taxtot;
+//var tot = resu().taxtot;
   
 function resu() {
 var adpri = (food1 * parseFloat(mydata.foods[0].price).toFixed(2) + food2 * parseFloat(mydata.foods[1].price).toFixed(2) + food3 * parseFloat(mydata.foods[2].price).toFixed(2) + food4 * parseFloat(mydata.foods[3].price).toFixed(2) + food5 * parseFloat(mydata.foods[4].price).toFixed(2) + food6 * parseFloat(mydata.foods[5].price).toFixed(2));
 var pri ((adpri / 4.712) + adpri).toFixed(2);
-document.getElementById("endP").innerHTML = taxtot;
+document.getElementById("endP").innerHTML = pri;
 }
   
-function tip1() {
+/*function tip1() {
 var tiptot = (tot + 5.00);
 document.getElementById("endP").innerHTML = tiptot;
-}
+}*/
 
 
 /*var previous = null;
