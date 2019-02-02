@@ -19,7 +19,7 @@ body{
   width:48.21%;
   height:18.5%;
   float:left;
-  background-color:red;
+  background-color:dimgray;
   padding:10px;
   margin:2px;
 }
@@ -31,7 +31,7 @@ body{
   width:48.21%;
   height:19.5%;
   float:right;
-  background-color:blue;
+  background-color:dimgray;
   padding:10px;
   margin:2px;
 }
@@ -43,7 +43,7 @@ body{
   width:48.21%;
   height:19.5%;
   float:left;
-  background-color:red;
+  background-color:dimgray;
   padding:10px;
   margin:2px;
 }
@@ -55,7 +55,7 @@ body{
   width:48.21%;
   height:19.5%;
   float:right;
-  background-color:blue;
+  background-color:dimgray;
   padding:10px;
   margin:2px;
 }
@@ -67,7 +67,7 @@ body{
   width:48.21%;
   height:19.5%;
   float:left;
-  background-color:red;
+  background-color:dimgray;
   padding:10px;
   margin:2px;
 }
@@ -79,7 +79,7 @@ body{
   width:48.21%;
   height:19.5%;
   float:right;
-  background-color:blue;
+  background-color:dimgray;
   padding:10px;
   margin:2px;
 }
