@@ -36,6 +36,13 @@ body{
   font-size:17px;
   margin:8px;
 }
+#pur1{
+ border-style: dotted solid dotted solid; 
+}
+
+#cle1{
+ border-style: dotted solid dotted solid; 
+}
 
 #sec{
   width:48.21%;
