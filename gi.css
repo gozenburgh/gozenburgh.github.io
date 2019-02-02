@@ -127,15 +127,19 @@ body{
   width:48.21%;
   height:19%;
   float:right;
-  color:white;
-  background-color:dimgray;
+  color:black;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size:auto 700px;
+  background-image: url("http://zinggadget.com/wp-content/uploads/2015/11/apple-7.jpg");
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
   margin:2px;
 }
 #fudes6{
-  color:white;
+  color:black;
+  font-size:17px;
   font-family:Tahoma, Geneva, sans-serif;
   margin:8px;
 }
