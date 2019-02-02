@@ -49,13 +49,11 @@ var food4 = 0;
 var food5 = 0;
 var food6 = 0;
 var tot = 0;
-  
-document.getElementById("endP").innerHTML = tot;
 
 function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
-var adtot = (tot + foodpri);
+var adtot = (tot + foodpri).toFixed(2);
 document.getElementById("totP1").innerHTML = foodpri;
 document.getElementById("endP").innerHTML = adtot;
 document.getElementById("totT1").innerHTML = food1;
@@ -63,7 +61,7 @@ document.getElementById("totT1").innerHTML = food1;
 function pur2() {
 food2++;
 var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
-var adtot = (tot + foodpri);
+var adtot = (tot + foodpri).toFixed(2);
 document.getElementById("totP2").innerHTML = foodpri;
 document.getElementById("endP").innerHTML = adtot;
 document.getElementById("totT2").innerHTML = food2;
