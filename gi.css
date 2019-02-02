@@ -10,7 +10,7 @@ body{
   padding:10px;
   font-size: 100px;
   color:white;
-  text-decoration:overline:
+  text-decoration:overline;
   font-family:Tahoma, Geneva, sans-serif;
   font-style:italic;
 }
@@ -92,7 +92,7 @@ body{
   float:right;
   color:white;
   background-color:darkslategray;
-  text-decoration:underline:
+  text-decoration:underline;
   padding:10px;
   font-size:40px;
   font-family:Tahoma, Geneva, sans-serif;
