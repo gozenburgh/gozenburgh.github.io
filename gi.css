@@ -23,7 +23,7 @@ body{
   background-image: url("http://www.seasonswellness.com/wp-content/uploads/2014/06/Shiitake_mushroom.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size:auto 650px;
+  background-size:auto 700px;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -62,7 +62,10 @@ body{
   height:18.5%;
   float:left;
   color:white;
-  background-color:dimgray;
+  background-image url("http://fc03.deviantart.net/fs70/f/2014/251/3/9/june_t3___red_potion_by_gtk666-d7yfo53.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto 700px;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -71,6 +74,7 @@ body{
 #fudes3{
   color:white;
   font-family:Tahoma, Geneva, sans-serif;
+  font-size:17px
   margin:8px;
 }
 
