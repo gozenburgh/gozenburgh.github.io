@@ -62,7 +62,7 @@ body{
   height:18.5%;
   float:left;
   color:white;
-  background-image url("http://fc03.deviantart.net/fs70/f/2014/251/3/9/june_t3___red_potion_by_gtk666-d7yfo53.png");
+  background-image: url("http://fc03.deviantart.net/fs70/f/2014/251/3/9/june_t3___red_potion_by_gtk666-d7yfo53.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size:auto 700px;
