@@ -90,17 +90,15 @@ var tot = 0;
   
 function resu() {
 var adpri = (food1 * parseFloat(mydata.foods[0].price).toFixed(2) + food2 * parseFloat(mydata.foods[1].price).toFixed(2) + food3 * parseFloat(mydata.foods[2].price).toFixed(2) + food4 * parseFloat(mydata.foods[3].price).toFixed(2) + food5 * parseFloat(mydata.foods[4].price).toFixed(2) + food6 * parseFloat(mydata.foods[5].price).toFixed(2));
-((tot + adpri / 4.712) + adpri).toFixed(2);
-document.getElementById("endP").innerHTML = tot;
+var pri ((tot + adpri / 4.712) + adpri).toFixed(2);
+function tip1() {
+(pri + 5.00);
+document.getElementById("endP").innerHTML = pri;
+}
+document.getElementById("endP").innerHTML = pri;
 }
   
-function tip1() {
-(tot + 5.00);
-document.getElementById("endP").innerHTML = tot;
-/*var amount = document.getElementById("tipA").value;
-document.getElementById("tipA").value = "";
-tot + amount;*/
-}
+
 
 /*var previous = null;
 var current = null;
