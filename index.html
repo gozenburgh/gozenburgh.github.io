@@ -12,7 +12,7 @@
 <div id = "top">SHAAAAP Shop</div>
 <div id = "fir">A Regular Mushroom<div id="fudes1">description </div><button onClick="pur1()">BUY!</button> <button onClick="cle1()">Nevermind</button><p id="totT1"></p><p id="totP1"></p></div>
 <div id = "sec">Mystery Bag<div id="fudes2">description </div><button onClick="pur2()">BUY!</button> <button onClick="cle2()">Nevermind</button><p id="totT2"></p><p id="totP2"></p></div>
-<div id = "thi">name<div id="fudes3">description </div><button onClick="pur3()">BUY!</button> <button onClick="cle3()">Nevermind</button><p id="totT3"></p><p id="totP3"></p></div>
+<div id = "thi">Red Potion<div id="fudes3">description </div><button onClick="pur3()">BUY!</button> <button onClick="cle3()">Nevermind</button><p id="totT3"></p><p id="totP3"></p></div>
 <div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">BUY!</button> <button onClick="cle4()">Nevermind</button><p id="totT4"></p><p id="totP4"></p></div>
 <div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">BUY!</button> <button onClick="cle5()">Nevermind</button><p id="totT5"></p><p id="totP5"></p></div>
 <div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">BUY!</button> <button onClick="cle6()">Nevermind</button><p id="totT6"></p><p id="totP6"></p></div>
@@ -30,7 +30,7 @@ xmlhttp.onreadystatechange = function(){
     
 document.getElementById("fudes1").innerHTML = "Just a Mushroom... " + "cost $" + parseFloat(mydata.foods[0].price) + " ";
 document.getElementById("fudes2").innerHTML = "It's just a brown bag " + "cost $" + parseFloat(mydata.foods[1].price) + " ";
-document.getElementById("fudes3").innerHTML = "description " + "cost $" + parseFloat(mydata.foods[2].price) + " ";
+document.getElementById("fudes3").innerHTML = "A potion? I wonder what it does? " + "cost $" + parseFloat(mydata.foods[2].price) + " ";
 document.getElementById("fudes4").innerHTML = "description " + "cost $" + parseFloat(mydata.foods[3].price) + " ";
 document.getElementById("fudes5").innerHTML = "description " + "cost $" + parseFloat(mydata.foods[4].price) + " ";
 document.getElementById("fudes6").innerHTML = "description " + "cost $" + parseFloat(mydata.foods[5].price) + " ";
