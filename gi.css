@@ -6,8 +6,9 @@ body{
 #top{
   width:98.7%;
   height:15%;
-  background-color:dimgray;
+  background-color:darkslategray;
   padding:10px;
+  font-size: 10px;
   color:white;
   font-family:Tahoma, Geneva, sans-serif;
   font-style:italic;
@@ -91,6 +92,7 @@ body{
   color:white;
   background-color:darkslategray;
   padding:10px;
+  font-size:10px;
   font-family:Tahoma, Geneva, sans-serif;
   font-style:italic;
 }
