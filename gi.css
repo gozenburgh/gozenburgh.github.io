@@ -23,7 +23,7 @@ body{
   background-image: url("http://www.seasonswellness.com/wp-content/uploads/2014/06/Shiitake_mushroom.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size:auto 700px;
+  background-size:auto auto;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -44,7 +44,7 @@ body{
   background-image: url("https://www.adn.com/resizer/kMizFB6YSmaZGe6e66pLe1gh4DU=/992x0/s3.amazonaws.com/arc-wordpress-client-uploads/adn/wp-content/uploads/2017/08/02023221/2017BacktoSchool_BeyondBrownBag_PaperBag.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size:auto 700px;
+  background-size:auto auto;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -65,7 +65,7 @@ body{
   background-image: url("https://conceptartempire.com/images/11/3024/01-red-drink-me-potion.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size:auto 700px;
+  background-size:auto auto;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
