@@ -16,7 +16,7 @@
 <div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">buy</button><p id="totT4"></p><p id="totP4"></p></div>
 <div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">buy</button><p id="totT5"></p><p id="totP5"></p></div>
 <div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">buy</button><p id="totT6"></p><p id="totP6"></p></div>
-<div id = "bottom">lower <button onClick="resu()">final</button> <button onClick="tip1()">tip</button> <p id="endP"></p></div>
+<div id = "bottom">lower <button onClick="resu()">final</button> <button onClick="tip1()">+5 for tip</button> <p id="endP"></p></div>
   
 <script>
   
@@ -99,10 +99,7 @@ document.getElementById("endP").innerHTML = tot;
 function tip1() {
 var adpri = (food1 * parseFloat(mydata.foods[0].price).toFixed(2) + food2 * parseFloat(mydata.foods[1].price).toFixed(2) + food3 * parseFloat(mydata.foods[2].price).toFixed(2) + food4 * parseFloat(mydata.foods[3].price).toFixed(2) + food5 * parseFloat(mydata.foods[4].price).toFixed(2) + food6 * parseFloat(mydata.foods[5].price).toFixed(2));
 var tot = ((adpri / 4.712) + adpri + 5).toFixed(2);
-//var tiptot = tiptot + 5;
-//window.tiptot = tiptot;
 window.tot = tot;
-//var combtot = tot + tiptot;
 document.getElementById("endP").innerHTML = tot;
 }
 
