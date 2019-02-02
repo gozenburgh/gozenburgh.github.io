@@ -21,8 +21,9 @@ body{
   float:left;
   color:white;
   background-image: url("http://www.seasonswellness.com/wp-content/uploads/2014/06/Shiitake_mushroom.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center;
+   background-size:auto 650px;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -42,9 +43,9 @@ body{
   float:right;
   color:black;
   background-image: url("https://www.adn.com/resizer/kMizFB6YSmaZGe6e66pLe1gh4DU=/992x0/s3.amazonaws.com/arc-wordpress-client-uploads/adn/wp-content/uploads/2017/08/02023221/2017BacktoSchool_BeyondBrownBag_PaperBag.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center;
-
+ background-size:auto 700px;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -64,9 +65,9 @@ body{
   float:left;
   color:black;
   background-image: url("https://thumbs.dreamstime.com/b/bottle-red-potion-game-icon-magic-elixir-bright-design-app-user-interface-cartoon-style-life-love-blood-rage-fury-96013148.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center;
- 
+  background-size:auto 800px;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
