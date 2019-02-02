@@ -8,6 +8,7 @@ body{
   height:15%;
   background-color:darkgray;
   padding:10px;
+  font-family:Tahoma, Geneva, sans-serif;
 }
 #fir{
   width:48.21%;
@@ -87,3 +88,5 @@ body{
   float:right;
   background-color:darkgray;
   padding:10px;
+  font-family:Tahoma, Geneva, sans-serif;
+}
