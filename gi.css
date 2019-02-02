@@ -6,7 +6,7 @@ body{
 #top{
   width:98.7%;
   height:15%;
-  background-color:slategray;
+  background-color:darkgray;
   padding:10px;
 }
 #fir{
@@ -85,5 +85,5 @@ body{
   width:98.7%;
   height:15%;
   float:right;
-  background-color:slategray;
+  background-color:darkgray;
   padding:10px;
