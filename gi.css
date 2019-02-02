@@ -41,7 +41,10 @@ body{
   height:19%;
   float:right;
   color:white;
-  background-color:dimgray;
+  background-image: url("https://www.adn.com/resizer/kMizFB6YSmaZGe6e66pLe1gh4DU=/992x0/s3.amazonaws.com/arc-wordpress-client-uploads/adn/wp-content/uploads/2017/08/02023221/2017BacktoSchool_BeyondBrownBag_PaperBag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto 650px;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
