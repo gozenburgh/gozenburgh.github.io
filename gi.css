@@ -8,7 +8,7 @@ body{
   height:15%;
   background-color:black;
   padding:10px;
-  font-color:white;
+  text-color:white;
   font-family:Tahoma, Geneva, sans-serif;
   font-style:italic;
 }
@@ -88,7 +88,7 @@ body{
   width:98.7%;
   height:15%;
   float:right;
-  font-color:white;
+  text-color:white;
   background-color:black;
   padding:10px;
   font-family:Tahoma, Geneva, sans-serif;
