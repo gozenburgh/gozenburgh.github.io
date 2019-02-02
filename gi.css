@@ -85,15 +85,19 @@ body{
   width:48.21%;
   height:18.5%;
   float:right;
-  color:white;
-  background-color:dimgray;
+  color:black;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size:auto 800px;
+  background-image: url("http://g02.s.alicdn.com/kf/UT8hlPwXC0XXXagOFbXJ/Canned-Mackerel-In-Tomato-Sauce.jpg");
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
   margin:2px;
 }
 #fudes4{
-  color:white;
+  color:black;
+  font-size:17px;
   font-family:Tahoma, Geneva, sans-serif;
   margin:8px;
 }
