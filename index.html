@@ -87,7 +87,7 @@ document.getElementById("totP6").innerHTML = "$" + foodpri;
 document.getElementById("totT6").innerHTML = food6;
 }
 
-var tot = [0];
+var tot = 0;
   
 function resu() {
 var adpri = (food1 * parseFloat(mydata.foods[0].price).toFixed(2) + food2 * parseFloat(mydata.foods[1].price).toFixed(2) + food3 * parseFloat(mydata.foods[2].price).toFixed(2) + food4 * parseFloat(mydata.foods[3].price).toFixed(2) + food5 * parseFloat(mydata.foods[4].price).toFixed(2) + food6 * parseFloat(mydata.foods[5].price).toFixed(2));
@@ -97,7 +97,7 @@ document.getElementById("endP").innerHTML = tot;
 }
   
 function tip1() {
-var tip = (tot + 5).toFixed(2);
+var tip = (tot + 5);
 document.getElementById("endP").innerHTML = tip;
 /*var amount = document.getElementById("tipA").value;
 document.getElementById("tipA").value = "";
