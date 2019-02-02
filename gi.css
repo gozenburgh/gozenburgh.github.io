@@ -30,19 +30,17 @@ body{
   margin:2px;
 }
 #fudes1{
-
   color:black;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:17px;
   margin:8px;
 }
 #pur1{
-border-width: 1px;
-border-radius: 12px;
+background-color:aliceblue;
 }
 
 #cle1{
-
+background-color:azure;
 }
 
 #sec{
@@ -60,7 +58,6 @@ border-radius: 12px;
   margin:2px;
 }
 #fudes2{
-
   color:black;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:17px;
@@ -82,7 +79,6 @@ border-radius: 12px;
   margin:2px;
 }
 #fudes3{
-
   color:black;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:17px;
