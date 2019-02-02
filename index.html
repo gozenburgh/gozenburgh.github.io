@@ -16,7 +16,7 @@
 <div id = "fou">name<div id="fudes4">description </div><button onClick="pur4()">buy</button><p id="totT4"></p><p id="totP4"></p></div>
 <div id = "fit">name<div id="fudes5">description </div><button onClick="pur5()">buy</button><p id="totT5"></p><p id="totP5"></p></div>
 <div id = "six">name<div id="fudes6">description </div><button onClick="pur6()">buy</button><p id="totT6"></p><p id="totP6"></p></div>
-<div id = "bottom">lower <button onClick"tips">tip</button><p id="endP"></div>
+<div id = "bottom">lower <button onClick"tips">tip</button> <button onClick"resu">final</button><p id="endP"></div>
   
 <script>
   
@@ -53,49 +53,37 @@ var tot = 0;
 function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
-var adtot = (tot + foodpri).toFixed(2);
 document.getElementById("totP1").innerHTML = foodpri;
-document.getElementById("endP").innerHTML = adtot;
 document.getElementById("totT1").innerHTML = food1;
 }
 function pur2() {
 food2++;
 var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
-var adtot = (tot + foodpri).toFixed(2);
 document.getElementById("totP2").innerHTML = foodpri;
-document.getElementById("endP").innerHTML = adtot;
 document.getElementById("totT2").innerHTML = food2;
 }
 function pur3() {
 food3++;
 var foodpri = (food3 * parseFloat(mydata.foods[2].price)).toFixed(2);
-//var totfoodpri = (endP + foodpri);
 document.getElementById("totP3").innerHTML = foodpri;
-//document.getElementById("endP").innerHTML = totfoodpri;
 document.getElementById("totT3").innerHTML = food3;
 }
 function pur4() {
 food4++;
 var foodpri = (food4 * parseFloat(mydata.foods[3].price)).toFixed(2);
-//var totfoodpri = (endP + foodpri);
 document.getElementById("totP4").innerHTML = foodpri;
-//document.getElementById("endP").innerHTML = totfoodpri;
 document.getElementById("totT4").innerHTML = food4;
 }
 function pur5() {
 food5++;
 var foodpri = (food5 * parseFloat(mydata.foods[4].price)).toFixed(2);
-//var totfoodpri = (endP + foodpri);
 document.getElementById("totP5").innerHTML = foodpri;
-//document.getElementById("endP").innerHTML = totfoodpri;
 document.getElementById("totT5").innerHTML = food5;
 }
 function pur6() {
 food6++;
 var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
-//var totfoodpri = (endP + foodpri);
 document.getElementById("totP6").innerHTML = foodpri;
-//document.getElementById("endP").innerHTML = totfoodpri;
 document.getElementById("totT6").innerHTML = food6;
 }
   
