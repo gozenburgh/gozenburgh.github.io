@@ -24,6 +24,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size:auto 650px;
+  text-decoration:underline;
   font-family:Tahoma, Geneva, sans-serif;
   font-size:18px;
   padding:10px;
@@ -31,8 +32,9 @@ body{
 }
 #fudes1{
   color:white;
+  text-decoration:none;
   font-family:Tahoma, Geneva, sans-serif;
-  font-size:15px;
+  font-size:17px;
   margin:8px;
 }
 
