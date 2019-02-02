@@ -2,7 +2,7 @@
   "foods":[
   {
     "which":"fir",
-    "price":3.99
+    "price":3.95
 },
 
 {
@@ -12,12 +12,12 @@
 
 {
     "which":"thr",
-    "price":10.99
+    "price":10.59
 },
 
 {
     "which":"for",
-    "price":2.59
+    "price":2.99
 },
 
 {
@@ -27,7 +27,7 @@
 
 {
     "which":"six",
-    "price":12.50
+    "price":12.59
 }
   ]
 }
