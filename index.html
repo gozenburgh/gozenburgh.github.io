@@ -53,43 +53,45 @@ var tot = 0;
 function pur1() {
 food1++;
 var foodpri = (food1 * parseFloat(mydata.foods[0].price)).toFixed(2);
-document.getElementById("totP1").innerHTML = foodpri;
+document.getElementById("totP1").innerHTML = "$" + foodpri;
 document.getElementById("totT1").innerHTML = food1;
 }
 function pur2() {
 food2++;
 var foodpri = (food2 * parseFloat(mydata.foods[1].price)).toFixed(2);
-document.getElementById("totP2").innerHTML = foodpri;
+document.getElementById("totP2").innerHTML = "$" + foodpri;
 document.getElementById("totT2").innerHTML = food2;
 }
 function pur3() {
 food3++;
 var foodpri = (food3 * parseFloat(mydata.foods[2].price)).toFixed(2);
-document.getElementById("totP3").innerHTML = foodpri;
+document.getElementById("totP3").innerHTML = "$" + foodpri;
 document.getElementById("totT3").innerHTML = food3;
 }
 function pur4() {
 food4++;
 var foodpri = (food4 * parseFloat(mydata.foods[3].price)).toFixed(2);
-document.getElementById("totP4").innerHTML = foodpri;
+document.getElementById("totP4").innerHTML = "$" + foodpri;
 document.getElementById("totT4").innerHTML = food4;
 }
 function pur5() {
 food5++;
 var foodpri = (food5 * parseFloat(mydata.foods[4].price)).toFixed(2);
-document.getElementById("totP5").innerHTML = foodpri;
+document.getElementById("totP5").innerHTML = "$" + foodpri;
 document.getElementById("totT5").innerHTML = food5;
 }
 function pur6() {
 food6++;
 var foodpri = (food6 * parseFloat(mydata.foods[5].price)).toFixed(2);
-document.getElementById("totP6").innerHTML = foodpri;
+document.getElementById("totP6").innerHTML = "$" + foodpri;
 document.getElementById("totT6").innerHTML = food6;
 }
   
 function resu() {
 var adpri = food1 * parseFloat(mydata.foods[0].price).toFixed(2) + food2 * parseFloat(mydata.foods[1].price).toFixed(2) + food3 * parseFloat(mydata.foods[2].price).toFixed(2) + food4 * parseFloat(mydata.foods[3].price).toFixed(2) + food5 * parseFloat(mydata.foods[4].price).toFixed(2) + food6 * parseFloat(mydata.foods[5].price).toFixed(2); 
-document.getElementById("endP").innerHTML = adpri;
+var taxtot = (adpri / 4.712).toFixed(2);
+var tretot = adpri + taxtot;
+document.getElementById("endP").innerHTML = tretot;
 }
   
 /*var previous = null;
