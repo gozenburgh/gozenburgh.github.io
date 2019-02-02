@@ -28,7 +28,7 @@ xmlhttp.onreadystatechange = function(){
     var mydata = JSON.parse(this.responseText);
     window.mydata = mydata;
     
-document.getElementById("fudes1").innerHTML = "Just a Mushroom " + parseFloat(mydata.foods[0].price) + " ";
+document.getElementById("fudes1").innerHTML = "Just a Mushroom... " + parseFloat(mydata.foods[0].price) + " ";
 document.getElementById("fudes2").innerHTML = "description " + parseFloat(mydata.foods[1].price) + " ";
 document.getElementById("fudes3").innerHTML = "description " + parseFloat(mydata.foods[2].price) + " ";
 document.getElementById("fudes4").innerHTML = "description " + parseFloat(mydata.foods[3].price) + " ";
